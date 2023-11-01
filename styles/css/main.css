@@ -24,4 +24,24 @@ body {
   height: 200px;
   border-radius: 50%;
   background-color: #333;
+}
+
+.clock {
+  background-color: #333;
+  color: #fff;
+  margin: 200px auto;
+  padding: 50px 100px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  color: lime;
+}
+.clock h1 {
+  font-size: 280px;
+  text-align: center;
+}
+.clock #am_pm {
+  margin-top: 50px;
+  font-family: sans-serif;
+  font-size: 80px;
 }/*# sourceMappingURL=main.css.map */
