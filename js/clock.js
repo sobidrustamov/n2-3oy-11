@@ -8,13 +8,23 @@ let nowTime = () => {
   let minut = document.querySelector(".minut");
   let secund = document.querySelector(".secund");
   let am_pm = document.querySelector("#am_pm");
+  if (minutes < 10) {
+    minut.innerHTML = "0" + minutes;
+  } else {
+    minut.innerHTML = minutes;
+  }
 
-  minut.innerHTML = minutes;
-  secund.innerHTML = seconds;
+  if (seconds < 10) {
+    secund.innerHTML = "0" + seconds;
+  } else {
+    secund.innerHTML = seconds;
+  }
 
   if (hour > 12) {
     am_pm.innerHTML = "PM";
-    hours.innerHTML = hour - 12;
+    hours.innerHTML = "0" + (hour - 12);
+  } else if (hour < 10) {
+    hours.innerHTML = "0" + hour;
   } else {
     hours.innerHTML = hour;
   }
